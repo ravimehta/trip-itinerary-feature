@@ -1,0 +1,462 @@
+{
+  "itinerary": {
+    "id": "paris-spring-2025",
+    "name": "Magical Spring in Paris",
+    "destination": "Paris, France",
+    "coverPhoto": {
+      "url": "https://images.unsplash.com/photo-1681311869180-72bc056afa1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwxfHxQYXJpcyUyMGNpdHlzY2FwZXxlbnwwfDB8fHwxNzU0OTM2NjI1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Eiffel Tower"
+    },
+    "dateRange": {
+      "startDate": "2025-05-15",
+      "endDate": "2025-05-17"
+    },
+    "travelers": [
+      {
+        "id": "traveler-1",
+        "firstName": "David",
+        "lastName": "Chen",
+        "avatar": {
+          "url": "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfDF8fHwxNzU0OTM2NjMwfDA&ixlib=rb-4.1.0&q=80&w=400"
+        },
+        "travelStyle": "Art & Culture Enthusiast"
+      },
+      {
+        "id": "traveler-2",
+        "firstName": "Marcus",
+        "lastName": "Rodriguez",
+        "avatar": {
+          "url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfDF8fHwxNzU0OTM2NjMwfDA&ixlib=rb-4.1.0&q=80&w=400"
+        },
+        "travelStyle": "Foodie"
+      },
+      {
+        "id": "traveler-3",
+        "firstName": "Sophie",
+        "lastName": "Williams",
+        "avatar": {
+          "url": "https://images.unsplash.com/photo-1521146764736-56c929d59c83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfDF8fHwxNzU0OTM2NjMwfDA&ixlib=rb-4.1.0&q=80&w=400"
+        },
+        "travelStyle": "History Buff"
+      },
+      {
+        "id": "traveler-4",
+        "firstName": "James",
+        "lastName": "Thompson",
+        "avatar": {
+          "url": "https://images.unsplash.com/photo-1590086782792-42dd2350140d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfDF8fHwxNzU0OTM2NjMwfDA&ixlib=rb-4.1.0&q=80&w=400"
+        },
+        "travelStyle": "Adventure Seeker"
+      }
+    ],
+    "days": [
+      {
+        "date": "2025-05-15",
+        "title": "Arrival & Settling In",
+        "items": [
+          {
+            "id": "item-1",
+            "name": "H\u00f4tel des Grands Boulevards",
+            "type": "accommodation",
+            "startTime": "15:00",
+            "duration": "overnight",
+            "rating": 4.5,
+            "reviewCount": 1247,
+            "tags": ["Luxury", "Historic", "Central Location"],
+            "photo": {
+              "url": "https://images.unsplash.com/photo-1592229505801-77b31918d822?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwxfHxQYXJpcyUyMGhvdGVsJTIwbHV4dXJ5fGVufDB8fHx8MTc1NDkzNjY1OXww&ixlib=rb-4.1.0&q=80&w=400"
+            },
+            "description": "Elegant boutique hotel in the heart of Paris, featuring Belle \u00c9poque architecture and modern amenities. Perfect location for exploring the city's cultural treasures.",
+            "notes": [
+              {
+                "author": "traveler-1",
+                "authorName": "Emma",
+                "timestamp": "2025-04-10T14:30:00Z",
+                "message": "This hotel looks amazing! I love the Art Nouveau details in the lobby."
+              },
+              {
+                "author": "traveler-4",
+                "authorName": "James",
+                "timestamp": "2025-04-10T14:35:00Z",
+                "message": "Great choice Emma! The location is perfect - walking distance to everything we want to see."
+              },
+              {
+                "author": "traveler-2",
+                "authorName": "Marcus",
+                "timestamp": "2025-04-10T15:20:00Z",
+                "message": "Just checked - their restaurant has a great reputation too. We might not even need to leave for dinner! \ud83c\udf77"
+              }
+            ]
+          },
+          {
+            "id": "item-2",
+            "name": "Welcome Dinner at Le Comptoir du Relais",
+            "type": "restaurant",
+            "startTime": "19:30",
+            "duration": "2h",
+            "rating": 4.3,
+            "reviewCount": 892,
+            "tags": ["French Cuisine", "Bistro", "Traditional"],
+            "photo": {
+              "url": "https://images.unsplash.com/photo-1709192248610-b83ee18067d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwxfHxQYXJpcyUyMGNhZmUlMjByZXN0YXVyYW50fGVufDB8fHx8MTc1NDkzNjY2M3ww&ixlib=rb-4.1.0&q=80&w=400"
+            },
+            "description": "Authentic Parisian bistro serving classic French dishes in an intimate setting. Famous for their duck confit and extensive wine selection.",
+            "notes": [
+              {
+                "author": "traveler-2",
+                "authorName": "Marcus",
+                "timestamp": "2025-04-12T10:15:00Z",
+                "message": "Perfect way to start our trip! I've been wanting to try their coq au vin."
+              },
+              {
+                "author": "traveler-3",
+                "authorName": "Sophie",
+                "timestamp": "2025-04-12T11:00:00Z",
+                "message": "Should we make a reservation? I read that this place gets quite busy in the evenings."
+              },
+              {
+                "author": "traveler-2",
+                "authorName": "Marcus",
+                "timestamp": "2025-04-12T11:05:00Z",
+                "message": "Already on it! I'll call them tomorrow to book a table for 4 at 7:30pm."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2025-05-16",
+        "title": "Art & History Day",
+        "items": [
+          {
+            "id": "item-3",
+            "name": "Breakfast at Caf\u00e9 de Flore",
+            "type": "restaurant",
+            "startTime": "08:30",
+            "duration": "1h",
+            "rating": 4.1,
+            "reviewCount": 2156,
+            "tags": ["Caf\u00e9", "Historic", "Literature"],
+            "photo": {
+              "url": "https://images.unsplash.com/photo-1731780263177-05ebe84c089c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwzfHxQYXJpcyUyMGNhZmUlMjByZXN0YXVyYW50fGVufDB8fHx8MTc1NDkzNjY2M3ww&ixlib=rb-4.1.0&q=80&w=400"
+            },
+            "description": "Legendary Parisian caf\u00e9 where intellectuals and artists have gathered since 1887. Start your day with croissants and caf\u00e9 au lait in this historic setting."
+          },
+          {
+            "id": "item-4",
+            "name": "The Louvre Museum",
+            "type": "museum",
+            "startTime": "10:00",
+            "duration": "4h",
+            "rating": 4.7,
+            "reviewCount": 156789,
+            "tags": ["Art", "Museum", "Historic Sites", "Cultural Landmark"],
+            "photo": {
+              "url": "https://images.unsplash.com/photo-1500039436846-25ae2f11882e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwxfHxMb3V2cmUlMjBtdXNldW18ZW58MHx8fHwxNzU0OTM2NjM0fDA&ixlib=rb-4.1.0&q=80&w=400"
+            },
+            "description": "World's largest art museum and historic monument in Paris. Home to thousands of works including the Mona Lisa and Venus de Milo.",
+            "notes": [
+              {
+                "author": "traveler-1",
+                "authorName": "Emma",
+                "timestamp": "2025-04-08T16:45:00Z",
+                "message": "I've downloaded the Louvre app with the recommended routes. Should we focus on specific wings or try to see everything?"
+              },
+              {
+                "author": "traveler-3",
+                "authorName": "Sophie",
+                "timestamp": "2025-04-08T17:10:00Z",
+                "message": "Let's do the highlights tour first - Mona Lisa, Winged Victory, Venus de Milo. We can always come back if we have time!"
+              },
+              {
+                "author": "traveler-4",
+                "authorName": "James",
+                "timestamp": "2025-04-09T09:20:00Z",
+                "message": "Good plan. I'll bring a portable charger - we'll definitely want to take lots of photos!"
+              }
+            ]
+          },
+          {
+            "id": "item-5",
+            "name": "Seine River Cruise",
+            "type": "activity",
+            "startTime": "15:30",
+            "duration": "1.5h",
+            "rating": 4.4,
+            "reviewCount": 3421,
+            "tags": ["Sightseeing", "River", "Relaxing"],
+            "photo": {
+              "url": "https://images.unsplash.com/photo-1492136344046-866c85e0bf04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHw1fHxFaWZmZWwlMjBUb3dlcnxlbnwwfHx8fDE3NTQ5MzY2Mzl8MA&ixlib=rb-4.1.0&q=80&w=400"
+            },
+            "description": "Scenic boat tour along the Seine River, offering unique views of Paris landmarks including Notre-Dame, the Eiffel Tower, and historic bridges.",
+            "notes": [
+              {
+                "author": "traveler-4",
+                "authorName": "James",
+                "timestamp": "2025-04-11T13:30:00Z",
+                "message": "Perfect way to rest our feet after the Louvre! Plus we'll get great views for photos."
+              }
+            ]
+          },
+          {
+            "id": "item-6",
+            "name": "Notre-Dame Cathedral (Exterior)",
+            "type": "landmark",
+            "startTime": "17:30",
+            "duration": "45min",
+            "rating": 4.6,
+            "reviewCount": 45237,
+            "tags": ["Historic Sites", "Architecture", "Gothic", "Cultural Landmark"],
+            "photo": {
+              "url": "https://images.unsplash.com/photo-1695746513501-80eb1b74d9d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwxfHxOb3RyZSUyMERhbWUlMjBQYXJpc3xlbnwwfHx8fDE3NTQ5MzY2NDR8MA&ixlib=rb-4.1.0&q=80&w=400"
+            },
+            "description": "Iconic Gothic cathedral, a masterpiece of French architecture. While restoration continues, the exterior remains a breathtaking sight and symbol of Paris.",
+            "notes": [
+              {
+                "author": "traveler-3",
+                "authorName": "Sophie",
+                "timestamp": "2025-04-10T20:00:00Z",
+                "message": "Even though we can't go inside yet, the architecture from the outside is absolutely stunning. The flying buttresses are incredible!"
+              },
+              {
+                "author": "traveler-1",
+                "authorName": "Emma",
+                "timestamp": "2025-04-10T20:30:00Z",
+                "message": "I'm bringing my good camera for this one. The late afternoon light should be perfect for photography."
+              }
+            ]
+          },
+          {
+            "id": "item-7",
+            "name": "Dinner in Le Marais",
+            "type": "dining",
+            "startTime": "19:00",
+            "duration": "2h",
+            "rating": 4.5,
+            "reviewCount": 1876,
+            "tags": ["Jewish Quarter", "Traditional Food", "Historic District"],
+            "photo": {
+              "url": "https://images.unsplash.com/photo-1731780263161-a6762de7d1db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwyfHxQYXJpcyUyMGNhZmUlMjByZXN0YXVyYW50fGVufDB8fHx8MTc1NDkzNjY2M3ww&ixlib=rb-4.1.0&q=80&w=400"
+            },
+            "description": "Explore the charming streets of Le Marais district and dine at L'As du Fallafel, famous for their incredible falafel and vibrant atmosphere."
+          }
+        ]
+      },
+      {
+        "date": "2025-05-17",
+        "title": "Icons & Heights",
+        "items": [
+          {
+            "id": "item-8",
+            "name": "Morning Coffee & Pastries",
+            "type": "breakfast",
+            "startTime": "08:00",
+            "duration": "1h",
+            "rating": 4.3,
+            "reviewCount": 967,
+            "tags": ["Bakery", "Coffee", "Pastries"],
+            "photo": {
+              "url": "https://images.unsplash.com/photo-1731780263161-a6762de7d1db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwyfHxQYXJpcyUyMGNhZmUlMjByZXN0YXVyYW50fGVufDB8fHx8MTc1NDkzNjY2M3ww&ixlib=rb-4.1.0&q=80&w=400"
+            },
+            "description": "Start the day with fresh croissants, pain au chocolat, and expertly crafted coffee at a local Parisian bakery."
+          },
+          {
+            "id": "item-9",
+            "name": "Arc de Triomphe",
+            "type": "landmark",
+            "startTime": "09:30",
+            "duration": "1.5h",
+            "rating": 4.5,
+            "reviewCount": 28956,
+            "tags": ["Historic Sites", "Monument", "Champs-\u00c9lys\u00e9es", "Views"],
+            "photo": {
+              "url": "https://images.unsplash.com/photo-1569949384963-296c0f251fbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwxfHxBcmMlMjBkZSUyMFRyaW9tcGhlJTIwUGFyaXN8ZW58MHx8fHwxNzU0OTM2NjU0fDA&ixlib=rb-4.1.0&q=80&w=400"
+            },
+            "description": "Climb to the top of this iconic triumphal arch for panoramic views of Paris and the famous Champs-\u00c9lys\u00e9es avenue stretching below.",
+            "notes": [
+              {
+                "author": "traveler-4",
+                "authorName": "James",
+                "timestamp": "2025-04-13T11:45:00Z",
+                "message": "The views from the top are supposed to be incredible! Who's up for climbing the 284 steps?"
+              },
+              {
+                "author": "traveler-1",
+                "authorName": "Emma",
+                "timestamp": "2025-04-13T12:00:00Z",
+                "message": "Count me in! Perfect photo opportunity and great way to see the city layout."
+              },
+              {
+                "author": "traveler-3",
+                "authorName": "Sophie",
+                "timestamp": "2025-04-13T14:20:00Z",
+                "message": "The eternal flame at the Tomb of the Unknown Soldier is so moving. Really puts history in perspective."
+              }
+            ]
+          },
+          {
+            "id": "item-10",
+            "name": "Champs-\u00c9lys\u00e9es Stroll & Shopping",
+            "type": "activity",
+            "startTime": "11:30",
+            "duration": "2h",
+            "rating": 4.2,
+            "reviewCount": 15632,
+            "tags": ["Shopping", "Famous Street", "Luxury"],
+            "photo": {
+              "url": "https://images.unsplash.com/photo-1454709542479-3964015697cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwzfHxBcmMlMjBkZSUyMFRyaW9tcGhlJTIwUGFyaXN8ZW58MHx8fHwxNzU0OTM2NjU0fDA&ixlib=rb-4.1.0&q=80&w=400"
+            },
+            "description": "Walk down the world's most famous avenue, lined with shops, caf\u00e9s, and theaters. Perfect for souvenir shopping and people watching."
+          },
+          {
+            "id": "item-11",
+            "name": "Lunch at Laur\u00e9e",
+            "type": "restaurant",
+            "startTime": "13:30",
+            "duration": "1.5h",
+            "rating": 4.4,
+            "reviewCount": 5429,
+            "tags": ["Macarons", "Tea House", "Luxury", "Sweet Treats"],
+            "photo": {
+              "url": "https://images.unsplash.com/photo-1576281009172-f78b3a1dc34a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHw1fHxQYXJpcyUyMGhvdGVsJTIwbHV4dXJ5fGVufDB8fHx8MTc1NDkzNjY1OXww&ixlib=rb-4.1.0&q=80&w=400"
+            },
+            "description": "Indulge in the finest French pastries and world-famous macarons at this legendary Parisian tea house, an institution since 1862.",
+            "notes": [
+              {
+                "author": "traveler-2",
+                "authorName": "Marcus",
+                "timestamp": "2025-04-14T09:30:00Z",
+                "message": "Their rose macaron is supposed to be life-changing! And I want to try their millefeuille too."
+              },
+              {
+                "author": "traveler-1",
+                "authorName": "Emma",
+                "timestamp": "2025-04-14T10:15:00Z",
+                "message": "Perfect spot for an elegant lunch. The interior is absolutely gorgeous too - very Belle \u00c9poque!"
+              }
+            ]
+          },
+          {
+            "id": "item-12",
+            "name": "Sacr\u00e9-C\u0153ur Basilica",
+            "type": "landmark",
+            "startTime": "15:30",
+            "duration": "2h",
+            "rating": 4.6,
+            "reviewCount": 67834,
+            "tags": ["Religious Site", "Architecture", "Views", "Montmartre"],
+            "photo": {
+              "url": "https://images.unsplash.com/photo-1561370665-7e266065fce1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwxfHxNb250bWFydHJlJTIwU2FjcmUlMjBDb2V1cnxlbnwwfHx8fDE3NTQ5MzY2NDl8MA&ixlib=rb-4.1.0&q=80&w=400"
+            },
+            "description": "Beautiful basilica perched atop Montmartre hill, offering spectacular panoramic views of Paris. The white Romano-Byzantine architecture is truly breathtaking.",
+            "notes": [
+              {
+                "author": "traveler-3",
+                "authorName": "Sophie",
+                "timestamp": "2025-04-15T16:00:00Z",
+                "message": "The history here is fascinating - built as a symbol of hope after the Franco-Prussian War. And those views!"
+              },
+              {
+                "author": "traveler-4",
+                "authorName": "James",
+                "timestamp": "2025-04-15T16:30:00Z",
+                "message": "Should we take the funicular up or climb the steps? I'm feeling adventurous!"
+              },
+              {
+                "author": "traveler-1",
+                "authorName": "Emma",
+                "timestamp": "2025-04-15T17:00:00Z",
+                "message": "Let's climb! The journey is part of the experience. Plus we'll work up an appetite for dinner \ud83d\ude0a"
+              }
+            ]
+          },
+          {
+            "id": "item-13",
+            "name": "Montmartre Village Exploration",
+            "type": "activity",
+            "startTime": "17:30",
+            "duration": "1.5h",
+            "rating": 4.5,
+            "reviewCount": 12457,
+            "tags": ["Artists Quarter", "Village", "Historic District", "Culture"],
+            "photo": {
+              "url": "https://images.unsplash.com/photo-1632607079950-ccc8ab125aba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwzfHxNb250bWFydHJlJTIwU2FjcmUlMjBDb2V1cnxlbnwwfHx8fDE3NTQ5MzY2NDl8MA&ixlib=rb-4.1.0&q=80&w=400"
+            },
+            "description": "Wander through the charming cobblestone streets of Montmartre village, discovering artist studios, vintage shops, and the famous Place du Tertre."
+          },
+          {
+            "id": "item-14",
+            "name": "Eiffel Tower at Sunset",
+            "type": "landmark",
+            "startTime": "19:30",
+            "duration": "2h",
+            "rating": 4.8,
+            "reviewCount": 198745,
+            "tags": ["Iconic Landmark", "Views", "Iron Architecture", "Romantic"],
+            "photo": {
+              "url": "https://images.unsplash.com/photo-1570097703229-b195d6dd291f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwxfHxFaWZmZWwlMjBUb3dlcnxlbnwwfHx8fDE3NTQ5MzY2Mzl8MA&ixlib=rb-4.1.0&q=80&w=400"
+            },
+            "description": "The ultimate Paris experience - visit the Iron Lady as the sun sets and watch her sparkle with thousands of lights every hour after dark.",
+            "notes": [
+              {
+                "author": "traveler-4",
+                "authorName": "James",
+                "timestamp": "2025-04-16T13:20:00Z",
+                "message": "Saved the best for last! Should we go up to the second floor or just admire from Troc\u00e9dro?"
+              },
+              {
+                "author": "traveler-2",
+                "authorName": "Marcus",
+                "timestamp": "2025-04-16T14:00:00Z",
+                "message": "I vote for going up! When else will we be here? Plus dinner with a view sounds amazing."
+              },
+              {
+                "author": "traveler-1",
+                "authorName": "Emma",
+                "timestamp": "2025-04-16T14:15:00Z",
+                "message": "Perfect finale to our trip! I'll book tickets for the second floor. The sparkle show starts at 8pm!"
+              },
+              {
+                "author": "traveler-3",
+                "authorName": "Sophie",
+                "timestamp": "2025-04-16T18:45:00Z",
+                "message": "Bring tissues everyone - this is going to be emotional! Our last night in the most beautiful city \ud83d\udc95"
+              }
+            ]
+          },
+          {
+            "id": "item-15",
+            "name": "Farewell Dinner at Jules Verne",
+            "type": "restaurant",
+            "startTime": "21:30",
+            "duration": "2.5h",
+            "rating": 4.7,
+            "reviewCount": 3456,
+            "tags": ["Fine Dining", "Michelin Star", "Eiffel Tower", "French Cuisine"],
+            "photo": {
+              "url": "https://images.unsplash.com/photo-1439393161192-32360eb753f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NTM3NjJ8MHwxfHNlYXJjaHwzfHxFaWZmZWwlMjBUb3dlcnxlbnwwfHx8fDE3NTQ5MzY2Mzl8MA&ixlib=rb-4.1.0&q=80&w=400"
+            },
+            "description": "Michelin-starred restaurant located on the second floor of the Eiffel Tower, offering exceptional French cuisine with unparalleled views of Paris.",
+            "notes": [
+              {
+                "author": "traveler-2",
+                "authorName": "Marcus",
+                "timestamp": "2025-04-17T11:30:00Z",
+                "message": "This is going to be EPIC! Michelin star dining inside the Eiffel Tower - dreams do come true!"
+              },
+              {
+                "author": "traveler-4",
+                "authorName": "James",
+                "timestamp": "2025-04-17T12:00:00Z",
+                "message": "I can't think of a more perfect way to end our Paris adventure. This trip is going to be unforgettable!"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "totalItems": 15,
+    "createdAt": "2025-04-07T10:00:00Z",
+    "lastModified": "2025-04-17T12:00:00Z"
+  }
+}
