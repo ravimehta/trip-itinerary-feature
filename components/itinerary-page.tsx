@@ -1,25 +1,47 @@
+/**
+ * ItineraryPage
+ *
+ * The root client component for the trip itinerary view.
+ * It acts as the "glue" layer: it receives the full itinerary data,
+ * tracks which traveler's profile modal is open, and renders the three
+ * major UI sections:
+ *
+ *   1. CurrentUserBadge — fixed pill in the top-right corner.
+ *   2. TripHeader       — hero image, trip name, dates, and traveler avatars.
+ *   3. DayTabs          — sticky tab bar + day content panels.
+ *   4. TravelerModal    — dialog that slides in when an avatar is clicked.
+ *
+ * Keeping this file small and focused (just wiring things together) makes
+ * it easy to follow the data flow at a glance.
+ */
+
 "use client"
 
 import { useState } from "react"
-import { format, parseISO } from "date-fns"
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { TripHeader } from "@/components/trip-header"
+import { CurrentUserBadge } from "@/components/current-user-badge"
+import { DayTabs } from "@/components/day-tabs"
 import { TravelerModal } from "@/components/traveler-modal"
-import { ItineraryCard } from "@/components/itinerary-card"
 import type { Itinerary, Traveler } from "@/lib/types"
 
+// The ID of the traveler who is currently "logged in".
+// In a real app this would come from your auth system.
 const CURRENT_USER_ID = "traveler-1"
 
 interface ItineraryPageProps {
+  /** The full itinerary loaded from data/itinerary.json. */
   itinerary: Itinerary
 }
 
 export function ItineraryPage({ itinerary }: ItineraryPageProps) {
+  // Which traveler's profile modal is open (null = closed).
   const [selectedTraveler, setSelectedTraveler] = useState<Traveler | null>(null)
   const [modalOpen, setModalOpen] = useState(false)
 
+  // Find the logged-in traveler record (used by badge + comment sections).
   const currentUser = itinerary.travelers.find((t) => t.id === CURRENT_USER_ID)!
 
+  // Called when an avatar is clicked in the header.
   function handleTravelerClick(traveler: Traveler) {
     setSelectedTraveler(traveler)
     setModalOpen(true)
@@ -27,80 +49,25 @@ export function ItineraryPage({ itinerary }: ItineraryPageProps) {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Logged-in user indicator */}
-      <div className="fixed top-4 right-4 z-50 flex items-center gap-2.5 bg-background/90 backdrop-blur-sm border border-border rounded-full pl-1 pr-3 py-1 shadow-sm">
-        <div className="w-7 h-7 rounded-full overflow-hidden shrink-0 border border-border">
-          <img
-            src={currentUser.avatar.url}
-            alt={currentUser.firstName}
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <span className="text-sm font-medium text-foreground leading-none">
-          {currentUser.firstName} {currentUser.lastName}
-        </span>
-      </div>
+      {/* 1. Floating "logged-in as" badge in the top-right corner */}
+      <CurrentUserBadge user={currentUser} />
 
-      {/* Trip header */}
+      {/* 2. Hero header with cover photo, trip name, dates, and avatars */}
       <TripHeader
         itinerary={itinerary}
         onTravelerClick={handleTravelerClick}
       />
 
-      {/* Day tabs & itinerary */}
+      {/* 3. Sticky day tabs and the grid of itinerary cards */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
-        <Tabs defaultValue={itinerary.days[0].date}>
-          {/* Tab bar */}
-          <div className="sticky top-0 z-30 -mx-4 sm:-mx-6 px-4 sm:px-6 py-3 bg-background/95 backdrop-blur-sm border-b border-border mb-6">
-            <TabsList className="flex h-auto gap-1 bg-transparent p-0 w-full sm:w-auto">
-              {itinerary.days.map((day, index) => {
-                const dateLabel = format(parseISO(day.date), "EEE, MMM d")
-                return (
-                  <TabsTrigger
-                    key={day.date}
-                    value={day.date}
-                    className="flex-1 sm:flex-none flex flex-col items-start sm:items-center gap-0.5 px-4 py-2.5 rounded-lg text-left sm:text-center data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=inactive]:text-muted-foreground hover:text-foreground transition-colors duration-150"
-                  >
-                    <span className="text-xs font-medium">Day {index + 1}</span>
-                    <span className="text-xs opacity-80 hidden sm:block">{dateLabel}</span>
-                    <span className="text-xs opacity-70 line-clamp-1 sm:hidden">{day.title}</span>
-                  </TabsTrigger>
-                )
-              })}
-            </TabsList>
-          </div>
-
-          {/* Tab content */}
-          {itinerary.days.map((day) => (
-            <TabsContent key={day.date} value={day.date} className="mt-0 focus-visible:outline-none">
-              {/* Day heading */}
-              <div className="mb-6">
-                <p className="text-xs text-muted-foreground uppercase tracking-wider font-medium mb-1">
-                  {format(parseISO(day.date), "EEEE, MMMM d, yyyy")}
-                </p>
-                <h2 className="text-2xl font-semibold text-foreground">{day.title}</h2>
-                <p className="text-sm text-muted-foreground mt-1">
-                  {day.items.length} {day.items.length === 1 ? "stop" : "stops"}
-                </p>
-              </div>
-
-              {/* Cards grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {day.items.map((item) => (
-                  <ItineraryCard
-                    key={item.id}
-                    item={item}
-                    currentUser={currentUser}
-                    travelers={itinerary.travelers}
-                  />
-                ))}
-              </div>
-            </TabsContent>
-          ))}
-        </Tabs>
+        <DayTabs
+          days={itinerary.days}
+          currentUser={currentUser}
+          travelers={itinerary.travelers}
+        />
       </main>
 
-      {/* Traveler modal */}
+      {/* 4. Modal that shows a traveler's profile when their avatar is clicked */}
       <TravelerModal
         traveler={selectedTraveler}
         currentUserId={CURRENT_USER_ID}
